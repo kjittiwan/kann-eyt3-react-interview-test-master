@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  @apply text-3xl mobile:text-2xl font-bold;
+}
+
+.landing-container {
+  @apply w-screen h-screen;
+}
+
+.main-container-home {
+  @apply w-full h-full flex items-center justify-center mobile:px-mobile tablet:px-tablet laptop:px-laptop px-desktop relative;
+}
+.main-container-home .content-container {
+  @apply flex flex-col items-center w-full max-w-[300px];
+}
+.main-container-home .content-container-home {
+  @apply flex flex-col items-center text-center gap-y-2 w-full max-w-[300px];
+}
+.main-container-home .nav-button-container-home {
+  @apply flex xs:flex-col gap-2;
+}
+.main-container-home .mock-credentials {
+  @apply fixed top-0 left-0 p-4 text-sm;
+}
+.main-container-home .mock-credentials h3 {
+  @apply text-base font-semibold;
+}
+
+.nav-button-container {
+  @apply flex gap-x-2 ml-auto;
+}
+
+.main-container-dashboard {
+  @apply min-h-screen w-full h-full mobile:p-mobile tablet:p-tablet laptop:p-laptop p-desktop flex flex-col items-center;
+}
+.main-container-dashboard .header {
+  @apply flex flex-col w-full justify-between gap-y-2;
+}
+.main-container-dashboard .table-container {
+  @apply w-full flex flex-col mobile:overflow-scroll;
+}
+.main-container-dashboard .table-container .search-input {
+  @apply my-4 w-[30%] min-w-[7rem];
+}
+.main-container-dashboard .table-container .table {
+  @apply w-full min-w-[420px];
+}
+
+.Form {
+  @apply flex flex-col w-full pt-3;
+}
+.Form .Form-Button {
+  @apply self-center;
+}
+
+.error-message {
+  @apply text-rose-500;
+}/*# sourceMappingURL=globals.css.map */
